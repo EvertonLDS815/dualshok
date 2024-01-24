@@ -1,0 +1,62 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Playstation Store</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="./imgs/logo.png" alt="logo">
+                <ul id="menu-list" style="height: 0px; padding: 0px;">
+                    <li class="nav-li"><a>Consoles</a></li>
+                    <li class="nav-li"><a>Acessórios</a></li>
+                    <li class="nav-li"><a>Controles</a></li>
+                    <li class="nav-li"><a>Outros</a></li>
+                </ul>
+            <img onclick="showMenu()" id="menu-icon" src="./imgs/menu.png" alt="menu">
+        </header>
+
+        <main>
+            <div class="column-1">
+                <h2>Ps5 DualShok</h2>
+                <h3>Wireless Controller for Playstation</h3>
+                <p>Controle Original</p>
+                <h4>R$ 222,50</h4>
+                <button class="buy">Comprar agora</button>
+            </div>
+            <div class="column-2">
+                <img class="controller" src="./imgs/controller.png" alt="Controle">
+                <div class="color-box"></div>
+                <button class="add-card">
+                    <img src="./imgs/add.png" alt="adicionar-ao-carrinho">
+                </button>
+            </div>
+        </main>
+
+        <section class="social-links">
+            <img src="./imgs/fb.png" alt="facebook">
+            <img src="./imgs/ig.png" alt="instagram">
+            <img src="./imgs/tw.png" alt="twitter">
+        </section>
+    </div>
+
+<script>
+    const menuList = document.getElementById("menu-list");
+    
+    function showMenu() {
+        if(menuList.style.height === "150px") {
+            menuList.style.height = "0px";
+            menuList.style.padding = "0";
+        } else {
+            menuList.style.height = "150px";
+            menuList.style.padding = "10px 15px 0";
+        }
+    }
+</script>
+</body>
+</html>
